@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools >= 70.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["app"]
+include = ["action_recognition_home_monitoring*"]
+
+[project]
+name = "action_recognition_home_monitoring"
+version = "1.0.0"
+requires-python = ">= 3.10"
+license = {file = "LICENSE"}
+dependencies = [
+  "numpy",
+  "opencv-python",
+  "opencv-contrib-python",
+  "tensorflow~=2.16",
+  "keras>=3",
+  "jupyter",
+  "matplotlib"
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent"
+]
+
+[project.optional-dependencies]
+gpu = ["tensorflow[and-cuda]"]
+
+
+[project.urls]
+Repository = "https://github.com/DaniDeniz/efficient-action-recognition-for-home-monitoring.git"

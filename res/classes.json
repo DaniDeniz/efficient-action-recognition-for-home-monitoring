@@ -1,0 +1,20 @@
+{
+  "bandaging": 0,
+  "blowing nose or sneezing": 1,
+  "clean floor": 2,
+  "cook": 3,
+  "eat": 4,
+  "fall": 5,
+  "hit": 6,
+  "Lying on bed or sofa": 7,
+  "Lying on the floor": 8,
+  "run": 9,
+  "sit": 10,
+  "sleeping": 11,
+  "smoke": 12,
+  "stand up": 13,
+  "using inhaler": 14,
+  "walk": 15,
+  "watching tv": 16,
+  "none": 17
+}
