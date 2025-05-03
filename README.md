@@ -1,10 +1,8 @@
 # Efficient Reconfigurable System for Home Monitoring of the Elderly via Action Recognition
 
-This repository is from the work: Efficient Reconfigurable System for Home Monitoring of the Elderly via Action Recognition [[1]()]
+This is the repository from the work: Efficient Reconfigurable System for Home Monitoring of the Elderly via Action Recognition
 
-We provide **Deep Learning model architectures and pre-trained weights** using [Keras](https://keras.io/api/) 
-for action recognition in elderly home monitoring scenarios.
-
+Here, we provide the Deep Learning models architectures using the [Keras](https://keras.io/) framework and the weights of the trained models.
 
 ## 📦 Overview  
 Our system leverages edge computing to enable real-time, non-invasive monitoring of elderly individuals through 
@@ -14,11 +12,9 @@ activity recognition. Key features include:
 - **Pre-trained weights** for both efficient and high-accuracy architectures.  
 
 
-## 🧰 Prerequisites  
-To use this repository:  
-1. **Python version**: `>=3.10`.  
-2. **Dependencies**: Install via virtual environment (recommended).  
-
+## 🧰 Pre-requisites
+Firstly, create a python virtualenv to run these models. Then activate the python virtual environment. It is required
+a Python version `>=3.10` to run the software in this repository.
 
 ```bash
 python3 -m virtualenv -p python3 venv
@@ -57,11 +53,11 @@ two_stream_model = TwoStream(
 ```
 
 ### 2. **Demo tutorial**
-Refer to [demo_tutorial.ipynb](demo_tutorial.ipynb) to see an example of how to load the models introduced with their
-weights and how to do inferences to perform action recognition.
+Refer to [demo_tutorial.ipynb](demo_tutorial.ipynb) to see an example of how to load the models with their
+weights and how to do inference to perform action recognition.
 
 This tutorial shows the recognition confidence of the solution when analyzing a critical action using the most efficient,
-and the most computational intensive trained model architectures.
+and the most computational-intensive trained models.
 
 #### 🎥 Sample Workflow in `demo_tutorial.ipynb`  
 
@@ -125,8 +121,18 @@ and the most computational intensive trained model architectures.
   - Action labels: Defined in [./res/classes.json](res/classes.json).
 
 ## 📌 Citation
+If you use any of the methods, the dataset, or the code, please cite the article:
+
 [1] D. Deniz, J. Isern, J. Solanti, P. Jääskeläinen, P. Hnětynka, L. Bulej, E. Ros, and F. Barranco. 
 "Efficient Reconfigurable System for Home Monitoring of the Elderly via Action Recognition" in Engineering Applications of Artificial Intelligence.
+
+	@inproceedings{deniz_2025,
+		author = {Deniz, D. and Isern, J. and Solanti, J. and Jääskeläinen, P., and Hnětynka, L., and Bulej, L., and Ros, E., and Barranco, F.},
+		title = {Efficient Reconfigurable System for Home Monitoring of the Elderly via Action Recognition},
+		journal = {Engineering Applications of Artificial Intelligence},
+		pages = {},
+		year = {2025}
+	}
 
 ## 📄 License
 [BSD 3-Clause License](LICENSE)
